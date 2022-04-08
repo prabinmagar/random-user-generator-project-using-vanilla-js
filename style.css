@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+:root{
+    --sky-blue: #0fcdef;
+    --dark-blue: #162b4e;
+    --grey: #babcc2;
+    --light-blue: #f8f9ff;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--light-blue);
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.card{
+    text-align: center;
+    background-color: #fff;
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 2rem;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 12px 3px rgba(53, 53, 53 0.1);
+            box-shadow: 0 2px 12px 3px rgba(53, 53, 53 0.1);
+    border-radius: 4px;
+}
+.card-head{
+    position: relative;
+    height: 130px;
+}
+.card-head a{
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
+    text-decoration: none;
+    background-color: var(--sky-blue);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: -webkit-box-shadow 300ms ease-in-out;
+    transition: -webkit-box-shadow 300ms ease-in-out;
+    -o-transition: box-shadow 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+}
+.card-head a:hover{
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.user-image img{
+    width: 100%;
+    height: 100%;
+}
+.user-image{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-post-address{
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.user-post-address > div{
+    padding: 0 2rem;
+}
+.user-post-address > div span{
+    display: block;
+}
+.user-post-address > div span:first-child{
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: var(--dark-blue);
+    opacity: 0.2;
+}
+.user-post-address > div span:last-child{
+    font-weight: 500;
+    color: var(--grey);
+    margin-top: 0.7rem;
+}
+.card-body{
+    padding: 0 3rem 3.8rem 3rem;
+}
+.user-name{
+    padding: 3rem 0 1.6rem 0;
+    font-size: 1.9rem;
+    color: var(--dark-blue);
+}
+.user-name-title{
+    font-weight: 700;
+}
+.user-name-full{
+    font-weight: 600;
+}
+.user-age{
+    color: var(--grey);
+}
+.user-location-address span{
+    color: var(--dark-blue);
+    font-size: 1.8rem;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+.card-foot{
+    padding-top: 2.4rem;
+    margin: 2.4rem 3rem;
+    border-top: 1px solid var(--sky-blue);
+}
+.user-contact-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    opacity: 0.8;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.user-contact-info span i{
+    color: var(--sky-blue);
+}
+.user-contact-info span{
+    color: var(--dark-blue);
+}
+#generate-btn{
+    background-color: var(--dark-blue);
+    color: #fff;
+    font-family: inherit;
+    font-size: 2rem;
+    border:none;
+    padding: 0.8rem 1.2rem;
+    margin-top: 3rem;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+#generate-btn:hover{
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 490px){
+    .container{
+        margin: 4rem auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .card-head a{
+        position: relative;
+        left: 0;
+        top: 10rem;
+    }
+    .user-post-address{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .user-post-address > div{
+        margin-bottom: 1.4rem;
+    }
+    .user-contact-info{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .user-contact-info span:first-child{
+        margin-bottom: 2rem;
+    }
+}
